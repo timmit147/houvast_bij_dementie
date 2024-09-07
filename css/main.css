@@ -108,11 +108,6 @@ body{
     cursor: pointer;
 }
 
-.hero-header-1 .angle-down:hover {
-    content: url('./angle-down-yellow.svg');
-}
-
-
 .header-2 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -209,6 +204,108 @@ body{
     margin: 0;
 }
 
+.contact{
+    background-color: #FFFCF0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.contact .border{
+    border: 3px solid #993537;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.contact h1 {
+    color: #8E3642;
+    margin: 0px;
+    font-size: 32px;
+}
+
+.contact p{
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid #8E3642;
+    color: #8E3642;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background-color: #8E3642;
+    color: white;
+}
+
+.contact .info a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.contact .info p{
+    font-size: 16px;
+    margin: 0px;
+    margin-left: 33px;
+}
+
+.contact .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.contact .info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+footer{
+    width: 100%;
+    background-color: #8E3642;
+    height: 10px;
+}
+
+.reviews{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #FFFCF0;
+}
+
+.reviews h1{
+    color: #8E3642;
+    margin: 0;
+    font-size: 32px;
+    margin-bottom: 20px;
+    max-width: 400px;
+}
+
+.reviews .blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.reviews .block{
+    padding: 30px;
+    background-color: #E4D292;
+    border-radius: 20px;
+    margin: 0;
+    max-width: 400px;
+}
 
 @media screen and (max-width: 1200px) {
     .hero-header-1 .title{
@@ -223,8 +320,26 @@ body{
 
 @media only screen and (max-width: 800px) {
 
+    .reviews .blocks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .border{
+        flex-direction: column;
+        padding: 30px 20px;
+        border-radius: 10px;
+        border: 2px solid #993537;
+    }
+
+    .contact h1{
+
+    }
+
     .header-2 {
         flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .header-2.flip{
@@ -244,11 +359,24 @@ body{
     .text-media .content{
         flex-direction: column;
         align-items: baseline;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     
     .text-media .text,.header-2 img {
         width: 100%;
     }
+
+    .reviews{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contact{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
 }
 
 
@@ -262,6 +390,13 @@ body{
         display: none; /* Hide nav links on small screens by default */
         width: 100%; /* Make nav full width */
         justify-content: center; /* Center items horizontally */
+        position: absolute;
+        top: 65px;
+        left: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #E4D292;
+        z-index: 1;
     }
 
     .menu-4  .hamburger-menu {
@@ -278,8 +413,8 @@ body{
     }
 
     .menu-4.active nav {
-        grid-column: span 2; /* Make nav span both columns on small screens */
-        justify-content: left; /* Center navigation items on small screens */
+        grid-column: span 2;
+        justify-content: left;
     }
     .menu-4.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
