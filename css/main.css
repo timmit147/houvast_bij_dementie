@@ -11,8 +11,7 @@ body{
 
 
 .menu-4 {
-    background-color: #E4D292;
-    border-bottom: 1px solid;
+    background-color: #8E3642;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -23,15 +22,16 @@ body{
 }
 
 .menu-4 a {
-    color: #8E3642;
+    color: white;
     text-decoration: none;
     width: fit-content;
     border-bottom: 2px solid transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .menu-4 a:hover {
-    color: #23443D;
-    border-bottom: 2px solid #23443D;
+    border-bottom: 2px solid white;
 }
 
 .menu-4 nav {
@@ -47,7 +47,7 @@ body{
 .menu-4  .hamburger-menu .bar {
     width: 25px;
     height: 3px;
-    background-color: #8E3642;
+    background-color: white;
     margin: 5px 0;
     transition: transform 0.4s, opacity 0.4s;
 }
@@ -83,6 +83,7 @@ body{
     background-color: black;
     object-position: right;
     opacity: 0.8;
+    object-position: center;
 }
 
 .hero-header-1 .title {
@@ -112,7 +113,7 @@ body{
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     gap: 40px;
     background-color: #FFFCF0;
     display: flex;
@@ -254,6 +255,11 @@ body{
     gap: 10px;
 }
 
+.contact .info a:hover{
+    color: #23443D;
+    text-decoration: underline;
+}
+
 .contact .info p{
     font-size: 16px;
     margin: 0px;
@@ -307,7 +313,7 @@ footer{
     max-width: 400px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     .hero-header-1 .title{
         font-size: 60px;
     }
@@ -395,7 +401,7 @@ footer{
         left: 0;
         padding: 20px;
         box-sizing: border-box;
-        background-color: #E4D292;
+        background-color: #8E3642;
         z-index: 1;
     }
 
