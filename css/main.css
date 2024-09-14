@@ -445,6 +445,7 @@ footer{
         display: flex; /* Show nav when menu is active */
         flex-direction: column;
         padding-top: 20px;
+        z-index: 5;
     }
 
     .menu-4.active nav {
