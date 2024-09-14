@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.houvastbijdementie.com/assets/sitemap.xml

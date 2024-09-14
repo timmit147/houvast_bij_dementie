@@ -124,7 +124,7 @@ body{
     flex-direction: row-reverse;
 }
 
-.header-2 h1 {
+.header-2 h2 {
     font-size: 32px;
     margin: 0px;
     color: #8E3642;
@@ -171,7 +171,7 @@ body{
     width: 100%
 }
 
-.text-media h1 {
+.text-media h2 {
     font-size: 32px;
     margin: 0px;
     color: #8E3642;
@@ -220,7 +220,7 @@ body{
     border-radius: 20px;
 }
 
-.contact h1 {
+.contact h2 {
     color: #8E3642;
     margin: 0px;
     font-size: 32px;
