@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'PT Serif';
-    src: url('assets/fonts/PTSerif-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/PTSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -66,7 +66,7 @@ body{
 .menu-4  .hamburger-menu .bar {
     width: 25px;
     height: 3px;
-    background-color: #FFFCF0;
+    background-color: #8E3642;
     margin: 5px 0;
     transition: transform 0.4s, opacity 0.4s;
 }
@@ -116,6 +116,7 @@ body{
     text-align: center; 
     width: 90%;
     z-index: 1;
+    font-weight: 100;
     font-family: 'PT Serif';
 }
 
@@ -356,7 +357,14 @@ footer{
     max-width: 400px;
 }
 
+@media screen and (max-width: 1200px) {
+    .menu-4:after{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1000px) {
+
     .hero-header-1{
         height: 60vh;
     }
@@ -431,6 +439,10 @@ footer{
 
 
 @media screen and (max-width: 768px) {
+
+    .menu-4 a{
+        color: white;
+    }
 
     .hero-header-1{
         height: 40vh;
