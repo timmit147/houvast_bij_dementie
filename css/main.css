@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'PT Serif';
+    src: url('assets/fonts/PTSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body{
     margin: 0;
     padding: 0px;
@@ -11,7 +19,7 @@ body{
 
 
 .menu-4 {
-    background-color: #8E3642;
+    background-color: #FFFCF0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -19,15 +27,26 @@ body{
     gap: 20px;
     box-sizing: border-box;
     height: 10vh;
+    position: relative;
+}
+
+.menu-4:after{
+    content: "";
+    background-color: #8E3642;
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
 }
 
 .menu-4 a {
-    color: #FFFCF0;
+    color: #8E3642;
     text-decoration: none;
     width: fit-content;
     border-bottom: 2px solid transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-weight: 600;
 }
 
 .menu-4 a:hover {
@@ -89,15 +108,15 @@ body{
 .hero-header-1 .title {
     color: #FFFCF0;
     position: absolute;
-    font-size: 50px;
+    font-size: 60px;
     text-shadow: 0px 0px 7px rgb(0 0 0);
-    filter: drop-shadow(0px 0px 24px #000);
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
     width: 90%;
     z-index: 1;
+    font-family: 'PT Serif';
 }
 
 .hero-header-1 .angle-down {
