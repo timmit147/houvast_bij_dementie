@@ -103,6 +103,7 @@ body{
     background-color: black;
     object-position: right;
     object-position: center;
+    max-height: 100vh;
 }
 
 .hero-header-1 .title {
